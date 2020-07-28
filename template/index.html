@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/codigo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Julian Cuero</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="hamburger"></div>
+      <input class="hamburger-toggle" type="checkbox" name="" id="" />
+      <div class="hamburger-menu"></div>
+      <div class="menu-overlay"></div>
+      <nav class="navbar">
+        <ul class="menu-list">
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="heading-block">
+        <h1 class="heading-primary u-margin-bottom-big">I am</h1>
+        <a href="#work" class="btn btn--white btn--animated">View work</a>
+      </div>
+    </header>
+    <section id="skills">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="heading-secondary">Skills</h2>
+        </div>
+        <h3 class="heading-tertiary">JavaScript</h3>
+        <h3 class="heading-tertiary">HTML</h3>
+        <h3 class="heading-tertiary">CSS</h3>
+        <h3 class="heading-tertiary">SCSS</h3>
+        <h3 class="heading-tertiary">React</h3>
+        <h3 class="heading-tertiary">NodeJS</h3>
+        <h3 class="heading-tertiary">Express</h3>
+        <h3 class="heading-tertiary">MongoDB</h3>
+        <h3 class="heading-tertiary">SQL</h3>
+      </div>
+    </section>
+    <section id="work">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="heading-secondary">Projects</h2>
+        </div>
+        <div class="cards u-margin-top-big">
+          <div class="card">
+            <div class="card-front">
+              <img
+                src="./img/project1.png"
+                alt="Website image"
+                class="project-img"
+              />
+              <div class="project-info">
+                <h3 class="heading-tertiary">Devcamper</h3>
+                <p class="project-stack">
+                  NodeJS, Express, React, Redux, MongoDB, JWT, REST API
+                </p>
+                <p class="project-description">
+                  Users can search for bootcamps and courses within a specific
+                  radius, create an account, reset their password and much more.
+                </p>
+              </div>
+            </div>
+            <div class="card-back text-center">
+              <a
+                class="btn-text u-margin-bottom-small"
+                href="https://mighty-falls-36347.herokuapp.com"
+                target="_blank"
+                >View Project <span class="arrow">&rarr;</span></a
+              >
+              <a
+                href="https://github.com/Julian1Le9Cuero/fullstack-devcamper"
+                class="btn btn--white"
+                target="_blank"
+                >View code</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- <a href="https://nameless-waters-92785.herokuapp.com" target="_blank"
+          >Dev Social App</a
+        >
+        <a href="https://final-crwn.herokuapp.com" target="_blank"
+          >Crwn Clothing</a
+        >
+        <a href="https://blissful-boyd-f82eb2.netlify.app" target="_blank"
+          >NewsGrid</a
+        > -->
+      </div>
+    </section>
+    <footer id="footer">
+      Copyright &copy; 2020 Julian Cuero
+    </footer>
+  </body>
+</html>
