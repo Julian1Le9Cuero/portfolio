@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Julian Cuero</title>
   </head>
@@ -20,7 +21,7 @@
       <nav class="navbar">
         <ul class="menu-list">
           <li><a href="#work">Projects</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#skills">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -36,15 +37,60 @@
         <div class="text-center">
           <h2 class="heading-secondary">Skills</h2>
         </div>
-        <h3 class="heading-tertiary">JavaScript</h3>
-        <h3 class="heading-tertiary">HTML</h3>
-        <h3 class="heading-tertiary">CSS</h3>
-        <h3 class="heading-tertiary">SCSS</h3>
-        <h3 class="heading-tertiary">React</h3>
-        <h3 class="heading-tertiary">NodeJS</h3>
-        <h3 class="heading-tertiary">Express</h3>
-        <h3 class="heading-tertiary">MongoDB</h3>
-        <h3 class="heading-tertiary">SQL</h3>
+        <div class="skill">
+          <h3 class="heading-tertiary">JavaScript</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">HTML</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">CSS/SCSS</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">React</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">NodeJS</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">Express</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-medium"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">MongoDB</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-advanced"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">SQL</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-medium"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="heading-tertiary">Python</h3>
+          <div class="skill__container">
+            <div class="skill__level skill__level-low"></div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="work">
@@ -52,7 +98,7 @@
         <div class="text-center">
           <h2 class="heading-secondary">Some of my Projects</h2>
         </div>
-        <div class="cards u-margin-top-big">
+        <div class="cards u-margin-top-medium">
           <!-- 1 -->
           <div class="card">
             <div class="card-front">
@@ -225,21 +271,31 @@
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="text-center u-margin-bottom-big">
-
-          <h2 class="heading-secondary">Reach me out!</h2>
+        <div class="text-center u-margin-bottom-small">
+          <h2 class="heading-secondary">Contact</h2>
         </div>
-        <div class="contact info">
-
-          <a href="">Linkedin</a>
-          <p>Email: julian.cuero@hotmail.com</p>
+        <div class="contact__info">
+          <div class="contact__info__item">
+            <a class="contact__info__item-text" href="https://co.linkedin.com/in/julian-cuero-172001165">
+              <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+              &nbsp;Linkedin</a>
+          </div>
+            <div class="contact__info__item">
+              <p class="contact__info__item-text"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                 &nbsp; julian.cuero@hotmail.com</p>
+            </div>
         </div>
       </div>
     </section>
     <footer id="footer">
-      <div class="text-center u-margin-top-big">
-        Copyright &copy; 2020 Julian Cuero
-      </div>
+     
+        <div class="footer__info text-center">
+          <p class="footer__info__paragraph">
+            Copyright &copy; 2020 Julian Cuero
+          </p>
+        </div>
+      
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
