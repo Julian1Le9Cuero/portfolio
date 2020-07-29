@@ -297,6 +297,8 @@ body {
 
 .navbar .menu-list li a:hover {
   background-position: right;
+  -webkit-transform: scale(1.05) translateX(1rem);
+          transform: scale(1.05) translateX(1rem);
 }
 
 .hamburger-toggle:checked ~ .navbar {
@@ -457,6 +459,20 @@ body {
 
 #contact .contact__info__item-text {
   color: #333;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#contact .contact__info__item-text-1:hover {
+  color: #0fabbc;
+}
+
+#contact .contact__info__item-text-2:hover {
+  color: #000;
+}
+
+#contact .contact__info__item-text-3:hover {
+  color: #ccc;
 }
 
 #footer {
@@ -507,6 +523,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
   #work {
     height: 200vh;
     padding: 12rem 0;
@@ -517,6 +536,41 @@ body {
   }
   .card {
     height: 40rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading-primary {
+    top: 45%;
+    font-size: 3.5rem;
+  }
+  .txt {
+    display: block;
+  }
+  .btn:link, .btn:visited {
+    font-size: 1.2rem;
+    padding: 1.5rem 3.5rem;
+  }
+  #skills {
+    height: 130vh;
+    margin-top: -20vh;
+  }
+  #work {
+    height: 300vh;
+    margin-top: -15vh;
+  }
+  #contact .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
