@@ -37,7 +37,7 @@ body {
   margin-bottom: 6rem;
 }
 .u-margin-bottom-small {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .u-margin-top-big {
@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-  max-width: 118rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -136,7 +136,18 @@ body {
 .btn-text {
   display: inline-block;
   color: $color-grey-dark;
+  transition: all 0.3s ease;
+  .arrow {
+    display: inline-block;
+  }
+  &:hover {
+    color: $color-secondary;
+    .arrow {
+      transform: translateX(1rem);
+    }
+  }
 }
+
 // Header
 .header {
   height: 90vh;
@@ -309,7 +320,7 @@ body {
   width: 30rem;
   position: relative;
   perspective: 150rem;
-
+  border-radius: 3px;
   &-front,
   &-back {
     height: 100%;
@@ -324,8 +335,10 @@ body {
 
   &-front {
     background-color: $color-white;
+    z-index: 6;
     .project-img {
       width: 100%;
+      height: 60%;
     }
 
     .project-info {
@@ -340,8 +353,21 @@ body {
   }
 
   &-back {
-    background-color: coral;
+    background-image: linear-gradient(
+      to right top,
+      $color-primary-dark,
+      $color-primary-light
+    );
     transform: rotateY(-180deg);
+    .project-video {
+      margin-bottom: 3rem;
+      height: 60%;
+      &__content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   &:hover &-front {
@@ -354,5 +380,6 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(1fr, 4);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
